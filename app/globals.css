@@ -4,24 +4,279 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  /* --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --gap: 2rem;
+  --duration: 30s;
+  --scroll-start: 0s;
+  --scroll-end: cals(-100% -var(--gap)); */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  margin: 0;
+  padding: 0;
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+/* ----------------------- homepage ------------------------ */
+
+.text-homepage > h1 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 7rem;
+  animation: color-change 5s infinite;
+}
+
+.text-homepage > h3 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 2rem;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #ffe5ec;
+  }
+  20% {
+    color: #ffb3c6;
+  }
+  40% {
+    color: #ff8fab;
+  }
+  60% {
+    color: #ff8fab;
+  }
+  80% {
+    color: #ffb3c6;
+  }
+  100% {
+    color: #ffe5ec;
+  }
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%,
+  27.3488% {
+    content: "my";
+  }
+  1.1395%,
+  26.2093% {
+    content: "my i";
+  }
+  2.2791%,
+  25.0698% {
+    content: "my in";
+  }
+  3.4186%,
+  23.9302% {
+    content: "my int";
+  }
+  4.5581%,
+  22.7907% {
+    content: "my inte";
+  }
+  5.6977%,
+  21.6512% {
+    content: "my inten";
+  }
+  6.8372%,
+  20.5116% {
+    content: "my intent";
+  }
+  7.9767%,
+  19.3721% {
+    content: "my intenti";
+  }
+  9.1163%,
+  18.2326% {
+    content: "my intentio";
+  }
+  10.2558%,
+  17.0930% {
+    content: "my intention";
+  }
+  10.2558%,
+  17.0930% {
+    content: "my intention :)";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "y";
+  }
+  31.9070%,
+  50.1395% {
+    content: "yo";
+  }
+  33.0465%,
+  49.0000% {
+    content: "you";
+  }
+  34.1860%,
+  47.8605% {
+    content: "your";
+  }
+  35.3256%,
+  46.7209% {
+    content: "your l";
+  }
+  36.4651%,
+  45.5814% {
+    content: "your li";
+  }
+  37.6047%,
+  44.4419% {
+    content: "your li";
+  }
+  37.6047%,
+  44.4419% {
+    content: "your lif";
+  }
+  37.6047%,
+  44.4419% {
+    content: "your life";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+    0%,
+    100% {
+      content: "you happy with my intention :)";
+    }
+    25% {
+      content: "you happy with my intention :)";
+    }
+    50% {
+      content: "you happy with my intention :)";
+    }
+    75% {
+      content: "you happy with my intention :)";
+    }
+  }
+
+  .typewriter::before {
+    content: "you happy with my intention :)";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+.navigation {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 2rem;
+}
+
+.parent-container {
+  position: relative;
+  width: 100%; /* Adjust the width as needed */
+  margin-top: 2rem;
+  padding: 1rem;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.mario {
+  position: absolute;
+  animation-name: drive;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.test {
+  display: flex;
+  justify-content: space-around;
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(-10vw);
+  }
+  to {
+    transform: translateX(99vw);
+  }
+}
+
+/* ----------------------- happy-birth-day page ------------------------ */
+
+/* footer-audio */
+.footer-audio {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 0.3rem;
+}
+
+#audio-element::-webkit-media-controls-panel {
+  background-color: #ff8fab;
+}
+
+#audio-element::-webkit-media-controls-play-button {
+  color: #ff8fab;
+}
+
+#audio-element::-webkit-media-controls-volume-slider {
+  color: #ff8fab;
+}
+
+.border-bottom-color {
+  color: #ff8fab;
+}
+
+/* section-1 */
+
+.section-black {
+  /* background-color: aliceblue; */
+}
+
+.card{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

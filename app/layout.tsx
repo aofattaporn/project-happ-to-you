@@ -1,3 +1,5 @@
+import FooterBar from './components/FooterBar'
+import NavigationBar from './components/NavigationBar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -9,13 +11,16 @@ export const metadata = {
 }
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html className='relative h-48' lang="en">
+      <NavigationBar/>
+        <main className='mb-96 body'>
+          {children}
+        </main>
     </html>
   )
 }
