@@ -279,4 +279,9 @@ footer {
 
 .card{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+.tweet{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
