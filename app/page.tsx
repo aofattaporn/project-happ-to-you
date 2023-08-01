@@ -10,7 +10,7 @@ export default function Home() {
         <div className="text-center text-homepage">
           <h1>HAPPY BIRTH DAY</h1>
           <h3>To Pas</h3>
-          <div className="px-32 mt-8 text-gray-600 font-bold">
+          <div className="md:px-32 px-8 mt-8 text-gray-600 font-bold">
             <p>
               Actually i don't know what i'll give to your gift. I think this
               web instead my gift and my wish to you.
