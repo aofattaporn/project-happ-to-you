@@ -6,13 +6,13 @@ const AudioFooter = () => {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.play();
+      audioRef.current;
     }
   }, []);
 
   return (
-    <footer className="bg-white rounded-lg shadow bg-white fixed bottom-0 flex flex-wrap justify-center footer-audio ">
-      <div className=" text-center">
+    <footer className="bg-white rounded-lg shadow fixed bottom-0 flex flex-wrap justify-center footer-audio ">
+      <div className="text-center">
         <p>Please click play to listen to this music</p>
         <div>
           <audio ref={audioRef} controls autoPlay src="/mp3/sukonenueng.mp3">

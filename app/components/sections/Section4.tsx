@@ -1,15 +1,18 @@
 "use client";
 
-import Link from "next/link";
-import CardPhoto from "../CardPhoto";
-import classSection2 from "./section2.module.css";
+import { FormEvent } from "react";
 
 const Section4 = () => {
+  const onSubmmitData = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    console.log("test");
+  };
   return (
     <>
       <div className="h-96"></div>
       <div className=" text-center p-5 md:p-40">
-        <form>
+        <form onSubmit={onSubmmitData}>
           <div className="flex-col justify-center">
             <div className="text-center mb-10 px-10">
               <label className="block mb-2 font-medium text-md">

@@ -1,8 +1,27 @@
-import Link from "next/link";
-import Image from "next/image";
-import Head from "next/head";
+"use client";
 
-export default function Home() {
+import Image from "next/image";
+
+// Required for side-effects
+import "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "./firebase/ConnectFirebase";
+
+export default async function Home() {
+  // Initialize Cloud Firestore and get a reference to the service
+
+  // console.log(db);
+
+  const docRef = doc(db, "/checking", "authen");
+  // Get a document, forcing the SDK to fetch from the offline cache.
+  try {
+    const doc = await getDoc(docRef);
+
+    console.log("Cached document data:", doc.data());
+  } catch (e) {
+    console.log("Error getting cached document:", e);
+  }
+
   return (
     <main className="">
       {/* content-homepage */}
@@ -11,21 +30,24 @@ export default function Home() {
           <h1>HAPPY BIRTH DAY</h1>
           <h3>To Pas</h3>
           <div className="md:px-32 px-8 mt-8 text-gray-600 font-bold">
-            <p>
-              Actually i don't know what i'll give to your gift. I think this
-              web instead my gift and my wish to you.
+            <div>
+              <p>
+                Actually i don't know what i'll give to your gift. I think this
+                web instead my gift and my wish to you.
+              </p>
+
               <h1 aria-label="Hi! I'm a developer">
                 wish you happy with &nbsp;
                 <span className="typewriter thick"></span>
               </h1>
-            </p>
+            </div>
           </div>
           <div className="mt-12">
-            <Link href={"/myWhish"}>
+            {/* <Link href={"/myWhish"}>
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 click to next page
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

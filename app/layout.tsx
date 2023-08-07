@@ -1,4 +1,3 @@
-import FooterBar from "./components/FooterBar";
 import NavigationBar from "./components/NavigationBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -17,8 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html className="relative h-48" lang="en">
-      <NavigationBar />
-      <main className="mb-96 body">{children}</main>
+      <body>
+        <NavigationBar />
+        <main className="mb-96 body">{children}</main>
+      </body>
     </html>
   );
 }
