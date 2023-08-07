@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import CardPhoto from "../CardPhoto";
+import CardPhoto from "../galleryPhoto/CardPhoto";
 import classSection2 from "./section2.module.css";
 
-const Section3 = () => {
+const MyWish = () => {
   return (
     <>
       <div className="h-96"></div>
@@ -22,4 +22,4 @@ const Section3 = () => {
   );
 };
 
-export default Section3;
+export default MyWish;

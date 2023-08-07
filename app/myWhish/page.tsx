@@ -1,17 +1,16 @@
 import AudioFooter from "../components/AudioFooter";
-import Section1 from "../components/sections/Section1";
-import Section2 from "../components/sections/Section2";
-import Section3 from "../components/sections/Section3";
-import Section4 from "../components/sections/Section4";
+import GelleryPhoto from "../components/galleryPhoto/GelleryPhoto";
+import TwitterWish from "../components/twitter/TwitterWish";
+import MyWish from "../components/wish/MyWish";
+import GameWish from "../components/game/GameWish";
 
 const MyWhishPage = () => {
   return (
     <>
-      {/* <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section4/> */}
-
+      <GelleryPhoto />
+      <TwitterWish />
+      <MyWish />
+      <GameWish />
       <AudioFooter />
     </>
   );

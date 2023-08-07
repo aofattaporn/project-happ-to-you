@@ -2,7 +2,7 @@
 
 import { FormEvent } from "react";
 
-const Section4 = () => {
+const GameWish = () => {
   const onSubmmitData = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -45,4 +45,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default GameWish;

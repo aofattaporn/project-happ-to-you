@@ -1,26 +1,25 @@
-"use client";
-
 import Image from "next/image";
 
 // Required for side-effects
 import "firebase/firestore";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "./firebase/ConnectFirebase";
+import Link from "next/link";
 
 export default async function Home() {
   // Initialize Cloud Firestore and get a reference to the service
 
   // console.log(db);
 
-  const docRef = doc(db, "/checking", "authen");
+  // const docRef = doc(db, "/checking", "authen");
   // Get a document, forcing the SDK to fetch from the offline cache.
-  try {
-    const doc = await getDoc(docRef);
+  // try {
+  //   const doc = await getDoc(docRef);
 
-    console.log("Cached document data:", doc.data());
-  } catch (e) {
-    console.log("Error getting cached document:", e);
-  }
+  //   console.log("Cached document data:", doc.data());
+  // } catch (e) {
+  //   console.log("Error getting cached document:", e);
+  // }
 
   return (
     <main className="">
@@ -43,11 +42,11 @@ export default async function Home() {
             </div>
           </div>
           <div className="mt-12">
-            {/* <Link href={"/myWhish"}>
+            <Link href={"/myWhish"}>
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 click to next page
               </button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>
