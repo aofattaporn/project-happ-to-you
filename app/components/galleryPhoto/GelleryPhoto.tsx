@@ -1,22 +1,19 @@
 "use client";
 
-import Link from "next/link";
 import CardPhoto from "./CardPhoto";
+import { ListMyWish } from "@/app/types/myWishTypes";
 
 const GelleryPhoto = () => {
   return (
     <div className="section-black my-4 py-10 text-center">
-      <p>“pls try to tap. in your pic :P”</p>
+      <h1 className="text-xl text-gray-600 font-bold">
+        Happy birthday to <span className=" text-pink-300">Pas 🎉</span>
+      </h1>
       <div className="my-5 p-10 overflow-scroll">
-        <ul className="flex flex-row justify-between">
-          <CardPhoto srcImage={"/jpg/pas/img1.jpg"} />
-          <CardPhoto srcImage={"/jpg/pas/img2.jpg"} />
-          <CardPhoto srcImage={"/jpg/pas/img3.jpg"} />
-          <CardPhoto srcImage={"/jpg/pas/img4.jpg"} />
-          <CardPhoto srcImage={"/jpg/pas/img5.jpg"} />
-          <CardPhoto srcImage={"/jpg/pas/img6.jpg"} />
-          <CardPhoto srcImage={"/jpg/pas/img7.jpg"} />
-          <CardPhoto srcImage={"/jpg/pas/img1.jpg"} />
+        <ul className="flex flex-row justify-between text-gray-500">
+          {ListMyWish.map((element) => {
+            return <CardPhoto srcImage={element.img} wish={element.wish} />;
+          })}
         </ul>
       </div>
       <div className=" p-8 container mx-auto">

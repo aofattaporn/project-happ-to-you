@@ -1,9 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import CardPhoto from "../galleryPhoto/CardPhoto";
-import classSection2 from "./section2.module.css";
-
 const TwitterWish = () => {
   return (
     <div className="my-96 px-16 h-96 text-center flex-col justify-center">

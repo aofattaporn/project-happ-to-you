@@ -11,12 +11,15 @@ const GameWish = () => {
   return (
     <>
       <div className="h-96"></div>
-      <div className=" text-center p-5 md:p-40">
-        <form onSubmit={onSubmmitData}>
+      <div className=" text-center p-8  md:p-40 bg-pink-200">
+        <form
+          onSubmit={onSubmmitData}
+          className=" bg-white p-10 md:p-20 shadow-2xl rounded-lg"
+        >
           <div className="flex-col justify-center">
             <div className="text-center mb-10 px-10">
-              <label className="block mb-2 font-medium text-md">
-                <span className="text-xl font-bold text-pink-500">
+              <label className="block mb-2 ">
+                <span className="text-xl font-bold text-pink-300">
                   {"Whis "}
                 </span>
                 anything ~~~
@@ -27,12 +30,12 @@ const GameWish = () => {
               <input
                 type="text"
                 id="first_name"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="mt-4 bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="eg. ข้อให้ได้กินอาหารหมาที่อร่อย ๆ "
                 required
               />
             </div>
-            <div>
+            <div className=" mt-5">
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 send you wish
               </button>

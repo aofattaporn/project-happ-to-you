@@ -1,14 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import CardPhoto from "../galleryPhoto/CardPhoto";
-import classSection2 from "./section2.module.css";
-
 const MyWish = () => {
   return (
     <>
       <div className="h-96"></div>
-      <div className=" text-center p-5 md:p-40">
+      <div className=" text-center p-5 md:p-40 bg-pink-200 py-40">
         <h1>
           Happy birthday! Even though your birthday this year might be
           accompanied by sadness and occasional tears, I still want you to find
