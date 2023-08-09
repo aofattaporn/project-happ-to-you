@@ -17,9 +17,9 @@ const CardPhoto = ({ srcImage, wish }: CardPhotoProps) => {
           <p>{wish}</p>
         </div>
       </div>
+      {/* ddd/ */}
     </li>
   );
 };
 
-// ddd
 export default CardPhoto;
