@@ -18,8 +18,6 @@ const CardPhoto = ({ srcImage, wish }: CardPhotoProps) => {
         </div>
       </div>
     </li>
-
-    // test
   );
 };
 
