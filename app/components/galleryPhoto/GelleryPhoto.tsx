@@ -11,8 +11,14 @@ const GelleryPhoto = () => {
       </h1>
       <div className="my-5 p-10 overflow-scroll">
         <ul className="flex flex-row justify-between text-gray-500">
-          {ListMyWish.map((element) => {
-            return <CardPhoto srcImage={element.img} wish={element.wish} />;
+          {ListMyWish.map((element, index) => {
+            return (
+              <CardPhoto
+                key={`key-${element}-${index}`}
+                srcImage={element.img}
+                wish={element.wish}
+              />
+            );
           })}
         </ul>
       </div>

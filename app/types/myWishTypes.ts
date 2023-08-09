@@ -8,7 +8,7 @@ export type MyWishType = {
 export const ListMyWish: MyWishType[] = [
   {
     img: "/jpg/pas/img1.jpg",
-    wish: "test my wish",
+    wish: "ขอให้อาหมาเป็นเด็กที่แข็งแรง",
   },
   {
     img: "/jpg/pas/img2.jpg",

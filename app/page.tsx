@@ -1,29 +1,24 @@
 import Image from "next/image";
 
-// Required for side-effects
 import "firebase/firestore";
-import { doc, getDoc } from "firebase/firestore";
-import { db } from "./firebase/ConnectFirebase";
 import Link from "next/link";
+import Head from "next/head";
 
 export default async function Home() {
   // Initialize Cloud Firestore and get a reference to the service
 
-  console.log(db);
-  const docRef = doc(db, "/checking", "authen");
-  // Get a document, forcing the SDK to fetch from the offline cache.
-  // try {
-  //   const doc = await getDoc(docRef);
-
-  //   console.log("Cached document data:", doc.data());
-  // } catch (e) {
-  //   console.log("Error getting cached document:", e);
-  // }
-
   return (
-    <main className="">
+    <main>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Head>
       {/* content-homepage */}
       <div className="flex-col items-center justify-center">
+        <p>Inside your Home component or layout</p>
         <div className="text-center text-homepage">
           <h1 className=" font-sans">HAPPY BIRTH DAY</h1>
           <h3>To Pas</h3>
@@ -49,7 +44,6 @@ export default async function Home() {
           </div>
         </div>
       </div>
-
       {/* image-hoempage */}
       <div className="test">
         <Image
