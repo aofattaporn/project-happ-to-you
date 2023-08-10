@@ -1,5 +1,3 @@
-import { type } from "os";
-
 export type MyWishType = {
   img: string;
   wish: string;
@@ -12,30 +10,26 @@ export const ListMyWish: MyWishType[] = [
   },
   {
     img: "/jpg/pas/img2.jpg",
-    wish: "test my wish",
+    wish: "งานเยอะแค่ไหนก็ขอให้ไม่ยม",
   },
   {
     img: "/jpg/pas/img3.jpg",
-    wish: "test my wish",
+    wish: "พักกผ่อนเยอะ ๆ ",
   },
   {
     img: "/jpg/pas/img4.jpg",
-    wish: "test my wish",
+    wish: "happy with your care bear ",
   },
   {
     img: "/jpg/pas/img5.jpg",
-    wish: "test my wish",
+    wish: "เป็นหมาที่สุดแสนจะเท่",
   },
   {
     img: "/jpg/pas/img6.jpg",
-    wish: "test my wish",
+    wish: "รูปนี้ไม่มีอะไร สวยอะ สวยแบบตัวแม่ อย่างจึ้ง",
   },
   {
     img: "/jpg/pas/img7.jpg",
-    wish: "test my wish",
-  },
-  {
-    img: "/jpg/pas/img1.jpg",
-    wish: "test my wish",
+    wish: "ขอให้เป็นหมาที่เท่งี้ไปเรื่อย ๆ naja",
   },
 ];

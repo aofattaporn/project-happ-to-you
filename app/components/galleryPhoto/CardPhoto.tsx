@@ -4,7 +4,7 @@ type CardPhotoProps = {
 };
 import { Kanit } from "next/font/google";
 
-const kanit = Kanit({ subsets: ["latin"], weight: ["400"] });
+export const kanit = Kanit({ subsets: ["latin"], weight: ["400"] });
 
 const CardPhoto = ({ srcImage, wish }: CardPhotoProps) => {
   return (
@@ -17,7 +17,6 @@ const CardPhoto = ({ srcImage, wish }: CardPhotoProps) => {
           <p>{wish}</p>
         </div>
       </div>
-      {/* ddd/ */}
     </li>
   );
 };

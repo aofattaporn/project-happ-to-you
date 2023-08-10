@@ -3,7 +3,7 @@
 const TwitterWish = () => {
   return (
     <div className="my-96 px-16 h-96 text-center flex-col justify-center">
-      <div className="text-xl text-gray-600 font-bold">
+      <div className="text-xl text-gray-600">
         <h1>the moment that's you be happy. it's look beautiful mak na :) </h1>
       </div>
 

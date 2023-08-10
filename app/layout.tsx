@@ -18,7 +18,7 @@ export default function RootLayout({
     <html className="relative h-48" lang="en">
       <body>
         <NavigationBar />
-        <main className="mb-96 body">{children}</main>
+        <main className="mb-40 body">{children}</main>
       </body>
     </html>
   );

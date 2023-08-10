@@ -3,27 +3,22 @@ import Image from "next/image";
 import "firebase/firestore";
 import Link from "next/link";
 import Head from "next/head";
+import { Kanit } from "next/font/google";
+
+const kanit = Kanit({ subsets: ["latin"], weight: ["400"] });
 
 export default async function Home() {
   // Initialize Cloud Firestore and get a reference to the service
 
   return (
-    <main>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
+    <main className={kanit.className}>
       {/* content-homepage */}
       <div className="flex-col items-center justify-center">
-        <p>Inside your Home component or layout</p>
         <div className="text-center text-homepage">
-          <h1 className=" font-sans">HAPPY BIRTH DAY</h1>
+          <h1 className={kanit.className}>HAPPY BIRTH DAY</h1>
           <h3>To Pas</h3>
           <div className="md:px-32 px-8 mt-8 text-gray-600 font-bold">
-            <div>
+            <div className={kanit.className}>
               <p>
                 Actually i don't know what i'll give to your gift. I think this
                 web instead my gift and my wish to you.
