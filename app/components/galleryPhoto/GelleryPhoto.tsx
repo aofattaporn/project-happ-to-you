@@ -21,7 +21,7 @@ const GelleryPhoto = () => {
           {ListMyWish.map((element, index) => {
             return (
               <CardPhoto
-                key={`key-${element}-${index}`}
+                key={"key -" + element + "-" + index}
                 srcImage={element.img}
                 wish={element.wish}
               />
