@@ -1,3 +1,5 @@
+import { Timestamp } from "firebase/firestore";
+
 export type MyWishType = {
   img: string;
   wish: string;
@@ -33,3 +35,9 @@ export const ListMyWish: MyWishType[] = [
     wish: "ขอให้เป็นหมาที่เท่งี้ไปเรื่อย ๆ naja",
   },
 ];
+
+export interface YourWish {
+  wish: string;
+  date: Timestamp;
+  status: boolean;
+}

@@ -11,9 +11,8 @@ import {
   getFirestore,
 } from "firebase/firestore";
 import { app } from "@/app/firebase/ConnectFirebase";
-import ListWish from "./ListWish";
-import { timeStamp } from "console";
-// import { addDoc, collection } from "firebase/firestore";
+import ListWish, { kanit_300 } from "./ListWish";
+import { YourWish } from "@/app/types/myWishTypes";
 
 enum Status {
   INITIAL,
@@ -21,13 +20,9 @@ enum Status {
   FAILS,
   SUCCCESS,
 }
-export interface YourWhish {
-  wish: string;
-  date: Timestamp;
-  status: boolean;
-}
+
 const GameWish = () => {
-  const [listWhis, setListWhis] = useState<YourWhish[]>([]);
+  const [listWish, setListWish] = useState<YourWish[]>([]);
   const [inputValue, setInputValue] = useState(""); // State for input value
   const [status, setStatus] = useState<Status>(Status.INITIAL);
 
@@ -38,11 +33,11 @@ const GameWish = () => {
         const querySnapshot = await getDocs(
           collection(getFirestore(app), "happ")
         );
-        const wishesData: YourWhish[] = [];
+        const wishesData: YourWish[] = [];
         await querySnapshot.forEach((doc) => {
-          wishesData.push(doc.data() as YourWhish);
+          wishesData.push(doc.data() as YourWish);
         });
-        setListWhis(wishesData);
+        setListWish(wishesData);
         setStatus(Status.SUCCCESS);
       } catch (error) {
         setStatus(Status.FAILS);
@@ -60,10 +55,10 @@ const GameWish = () => {
     e.preventDefault();
     setStatus(Status.LOADING);
 
-    const newWish: YourWhish = {
+    const newWish: YourWish = {
       wish: inputValue,
       date: Timestamp.now(),
-      status: true,
+      status: false,
     };
 
     try {
@@ -75,7 +70,7 @@ const GameWish = () => {
       setStatus(Status.SUCCCESS);
 
       // Update the local state with the new wish
-      setListWhis((prevList) => [...prevList, newWish]);
+      setListWish((prevList) => [...prevList, newWish]);
       setInputValue("");
     } catch (error) {
       console.error("Error adding document: ", error);
@@ -83,7 +78,7 @@ const GameWish = () => {
   };
 
   return (
-    <>
+    <div className={kanit_300.className}>
       <div className="h-96"></div>
       <div className="text-center p-8  md:p-40 bg-pink-200">
         <form
@@ -94,7 +89,7 @@ const GameWish = () => {
             <div className="text-center mb-10 px-5">
               <label className="block mb-2 ">
                 <span className="text-xl font-bold text-pink-300">
-                  {"Whis "}
+                  {"Wish "}
                 </span>
                 anything ~~~
                 <p>
@@ -147,11 +142,11 @@ const GameWish = () => {
           <div className=" mt-10 bg-white p-2 md:p-4 shadow-2xl rounded-lg grid grid-cols-9 gap-4 h-20 animate-pulse "></div>
         ) : null}
         {status === Status.SUCCCESS ? (
-          <ListWish listWish={listWhis}></ListWish>
+          <ListWish listWish={listWish}></ListWish>
         ) : null}
       </div>
       <div className="h-96"></div>
-    </>
+    </div>
   );
 };
 
