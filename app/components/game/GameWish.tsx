@@ -6,13 +6,13 @@ import {
   Timestamp,
   addDoc,
   collection,
-  getDoc,
   getDocs,
   getFirestore,
 } from "firebase/firestore";
-import { app } from "@/app/firebase/ConnectFirebase";
+// import { app } from "@/app/firebase/ConnectFirebase";
 import ListWish, { kanit_300 } from "./ListWish";
 import { YourWish } from "@/app/types/myWishTypes";
+import { app } from "@/app/firebase/ConnectFirebase";
 
 enum Status {
   INITIAL,
@@ -41,6 +41,8 @@ const GameWish = () => {
         setStatus(Status.SUCCCESS);
       } catch (error) {
         setStatus(Status.FAILS);
+        console.log("sss");
+
         console.error("Error fetching data: ", error);
       }
     };
