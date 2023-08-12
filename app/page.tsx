@@ -28,8 +28,8 @@ export default async function Home() {
           <div className="md:px-32 px-8 mt-8 text-gray-600 font-bold">
             <div className={kanit.className}>
               <p>
-                Actually i don't know what i'll give to your gift. I think this
-                web instead my gift and my wish to you.
+                Actually i don&apos;t know what i&apos;ll give to your gift. I
+                think this web instead my gift and my wish to you.
               </p>
 
               <h1 aria-label="Hi! I'm a developer">
