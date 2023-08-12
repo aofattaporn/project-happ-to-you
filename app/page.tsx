@@ -4,11 +4,19 @@ import "firebase/firestore";
 import Link from "next/link";
 import Head from "next/head";
 import { Kanit } from "next/font/google";
+import { collection, doc, getDocs, getFirestore } from "firebase/firestore";
+import { app } from "./firebase/ConnectFirebase";
 
 const kanit = Kanit({ subsets: ["latin"], weight: ["400"] });
 
 export default async function Home() {
   // Initialize Cloud Firestore and get a reference to the service
+
+  // const db = getFirestore(app);
+  // const querySnapshot = await getDocs(collection(db, "checking"));
+  // querySnapshot.forEach((doc) => {
+  //   console.log(`${doc.id} => ${doc.data() as any}`);
+  // });
 
   return (
     <main className={kanit.className}>

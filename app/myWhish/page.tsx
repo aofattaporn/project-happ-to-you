@@ -24,7 +24,7 @@ const MyWhishPage = () => {
         ></Image>
       </div>
       <div className="flex justify-center">
-        <p className=" font-kanit">เดี๋ยวซื้อบลัฟแถมให้ </p>
+        <p className="font-kanit">เดี๋ยวซื้อบลัฟแถมให้ </p>
       </div>
     </>
   );

@@ -2,16 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: "test-bloc-patter",
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUAEMENT_ID,
+  apiKey: "AIzaSyBai-Y9qYeo7W-YyRCEBdEIvFN2qTYW5-0",
+  authDomain: "test-bloc-pattern.firebaseapp.com",
+  projectId: "test-bloc-pattern",
+  storageBucket: "test-bloc-pattern.appspot.com",
+  messagingSenderId: "831677483157",
+  appId: "1:831677483157:web:b6e898beb4c17034bd339c",
+  measurementId: "G-ZF3EW26YHP",
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-export const db = getFirestore(app);
+export const app = initializeApp(firebaseConfig);
