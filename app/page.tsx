@@ -39,7 +39,7 @@ export default async function Home() {
             </div>
           </div>
           <div className="mt-12">
-            <Link href={"/myWhish"}>
+            <Link href={"/myWish"}>
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 click to next page
               </button>

@@ -1,8 +1,10 @@
 "use client";
 
+import { kanit_latin_200 } from "@/app/types/fontsTypes";
+
 const MyWish = () => {
   return (
-    <>
+    <div className={kanit_latin_200.className}>
       <div className="h-96"></div>
       <div className="text-center p-5 md:p-40 bg-pink-200 py-40">
         <h1>
@@ -17,7 +19,7 @@ const MyWish = () => {
         </h1>
       </div>
       <div className="h-96"></div>
-    </>
+    </div>
   );
 };
 

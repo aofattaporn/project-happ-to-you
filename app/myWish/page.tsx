@@ -5,7 +5,7 @@ import MyWish from "../components/wish/MyWish";
 import GameWish from "../components/game/GameWish";
 import Image from "next/image";
 
-const MyWhishPage = () => {
+const MyWishPage = () => {
   return (
     <>
       <GelleryPhoto />
@@ -30,4 +30,4 @@ const MyWhishPage = () => {
   );
 };
 
-export default MyWhishPage;
+export default MyWishPage;
