@@ -1,3 +1,5 @@
+import { getStorage } from "@firebase/storage";
+import { getApp } from "firebase/app";
 import { Timestamp } from "firebase/firestore";
 
 export type MyWishType = {
@@ -5,6 +7,8 @@ export type MyWishType = {
   wish: string;
 };
 
+const firebaseApp = getApp();
+const storage = getStorage(firebaseApp, "gs://test-bloc-pattern.appspot.com");
 export const ListMyWish: MyWishType[] = [
   {
     img: "/jpg/pas/img1.jpg",
