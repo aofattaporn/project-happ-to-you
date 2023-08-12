@@ -11,7 +11,7 @@ const firebaseApp = getApp();
 const storage = getStorage(firebaseApp, "gs://test-bloc-pattern.appspot.com");
 export const ListMyWish: MyWishType[] = [
   {
-    img: "/jpg/pas/img1.jpg",
+    img: "/jpg/pas/img1.JPG",
     wish: "ขอให้อาหมาเป็นเด็กที่แข็งแรง",
   },
   {
@@ -23,19 +23,19 @@ export const ListMyWish: MyWishType[] = [
     wish: "พักกผ่อนเยอะ ๆ ",
   },
   {
-    img: "/jpg/pas/img4.jpg",
+    img: "/jpg/pas/img4.JPG",
     wish: "happy with your care bear ",
   },
   {
-    img: "/jpg/pas/img5.jpg",
+    img: "/jpg/pas/img5.JPG",
     wish: "เป็นหมาที่สุดแสนจะเท่",
   },
   {
-    img: "/jpg/pas/img6.jpg",
+    img: "/jpg/pas/img6.JPG",
     wish: "รูปนี้ไม่มีอะไร สวยอะ สวยแบบตัวแม่ อย่างจึ้ง",
   },
   {
-    img: "/jpg/pas/img7.jpg",
+    img: "/jpg/pas/img7.JPG",
     wish: "ขอให้เป็นหมาที่เท่งี้ไปเรื่อย ๆ naja",
   },
 ];
