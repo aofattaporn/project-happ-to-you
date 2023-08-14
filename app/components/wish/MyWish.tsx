@@ -12,9 +12,9 @@ const MyWish = () => {
             Happy birthday!
           </span>{" "}
           Although there might be times when sadness and tears appear, I hope
-          you'll also discover moments of happiness and wear a cheerful
+          you&apos;ll also discover moments of happiness and wear a cheerful
           expression. Find joy and keep that smile on your face. Just remember,
-          I'll always be here to stand by you, regardless of what you come
+          I&apos;ll always be here to stand by you, regardless of what you come
           across or experience. You can rely on me.
         </h1>
       </div>
