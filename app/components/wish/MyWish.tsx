@@ -11,11 +11,11 @@ const MyWish = () => {
           <span className="font-bold text-pink-400 text-lg">
             Happy birthday!
           </span>{" "}
-          Even though your birthday this year might be accompanied by sadness
-          and occasional tears, I still want you to find moments of joy and wear
-          smiles on your face. Be extremely happy and keep smiling. Remember, I
-          will always be there to support you, no matter what you find or face.
-          You can count on me.
+          Although there might be times when sadness and tears appear, I hope
+          you'll also discover moments of happiness and wear a cheerful
+          expression. Find joy and keep that smile on your face. Just remember,
+          I'll always be here to stand by you, regardless of what you come
+          across or experience. You can rely on me.
         </h1>
       </div>
       <div className="h-96"></div>

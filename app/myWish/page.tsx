@@ -4,6 +4,7 @@ import TwitterWish from "../components/twitter/TwitterWish";
 import MyWish from "../components/wish/MyWish";
 import GameWish from "../components/game/GameWish";
 import Image from "next/image";
+import { kanit_latin_300, kanit_latin_400 } from "../types/fontsTypes";
 
 const MyWishPage = () => {
   return (
@@ -23,8 +24,10 @@ const MyWishPage = () => {
           alt="mootoo_v1"
         ></Image>
       </div>
-      <div className="flex justify-center">
-        <p className="font-kanit">เดี๋ยวซื้อบลัฟแถมให้ </p>
+      <div className="flex justify-center mb-32">
+        <div className="bg-pink-50 px-4 py-2 rounded-full text-dark">
+          <p className={kanit_latin_300.className}>เดี๋ยวซื้อบลัฟแถมให้ </p>
+        </div>
       </div>
     </>
   );

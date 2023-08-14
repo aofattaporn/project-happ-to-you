@@ -11,8 +11,8 @@ const AudioFooter = () => {
   }, []);
 
   return (
-    <footer className="bg-white rounded-lg shadow fixed bottom-0 flex flex-wrap justify-center footer-audio ">
-      <div className="text-center">
+    <footer className="bg-white rounded-lg  fixed bottom-0 flex flex-wrap justify-center footer-audio shadow-xl ">
+      <div className="text-center p-4">
         <p>Please click play to listen to this music</p>
         <div>
           <audio ref={audioRef} controls autoPlay src="/mp3/sukonenueng.mp3">

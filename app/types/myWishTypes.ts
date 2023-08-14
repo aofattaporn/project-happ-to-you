@@ -32,11 +32,11 @@ export const ListMyWish: MyWishType[] = [
   },
   {
     img: "/jpg/pas/img7.jpg",
-    wish: "และก็ ขอให้เป็นหมาที่เท่งี้ไปเรื่อย ๆ naja",
+    wish: "สุดท้าย ขอให้เป็นหมาที่เท่งี้ไปเรื่อย ๆ naja",
   },
   {
     img: "/jpg/pas/img8.jpg",
-    wish: "เป็นเด็กเท่กับรองเท้าแสนเท่ ! ",
+    wish: "เป็นเด็กเท่กับรองเท้าแสนเท่ ! ด้วย",
   },
   {
     img: "/jpg/pas/img6.jpg",
