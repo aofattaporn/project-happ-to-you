@@ -12,11 +12,11 @@ export const ListMyWish: MyWishType[] = [
   },
   {
     img: "/jpg/pas/img2.jpg",
-    wish: "งานเยอะแค่ไหนก็ขอให้ไม่ยม",
+    wish: "งานเยอะแค่ไหนก็ขอให้ไม่ยมนะจ๊าบบ",
   },
   {
     img: "/jpg/pas/img3.jpg",
-    wish: "พักกผ่อนเยอะ ๆ ",
+    wish: "มีเวลาพักกผ่อนเยอะ ๆ 5555",
   },
   {
     img: "/jpg/pas/img4.jpg",
@@ -24,15 +24,23 @@ export const ListMyWish: MyWishType[] = [
   },
   {
     img: "/jpg/pas/img5.jpg",
-    wish: "เป็นหมาที่สุดแสนจะเท่",
+    wish: "ชอบรูปนี้เป็นการส่วนตัวแฮะ5555",
   },
   {
-    img: "/jpg/pas/img6.jpg",
-    wish: "รูปนี้ไม่มีอะไร สวยอะ สวยแบบตัวแม่ อย่างจึ้ง",
+    img: "/jpg/pas/img9.jpg",
+    wish: "ไว้ไปกินสเวนเซ่นด้วยกันอีกนะจ๊าบ จองตัวแล้ว",
   },
   {
     img: "/jpg/pas/img7.jpg",
-    wish: "ขอให้เป็นหมาที่เท่งี้ไปเรื่อย ๆ naja",
+    wish: "และก็ ขอให้เป็นหมาที่เท่งี้ไปเรื่อย ๆ naja",
+  },
+  {
+    img: "/jpg/pas/img8.jpg",
+    wish: "เป็นเด็กเท่กับรองเท้าแสนเท่ ! ",
+  },
+  {
+    img: "/jpg/pas/img6.jpg",
+    wish: "รูปนี้ไม่มีอะไร สวยอะ สวยแบบตัวแม่ อย่างจึ้ง 5555",
   },
 ];
 
