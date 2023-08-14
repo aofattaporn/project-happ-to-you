@@ -4,7 +4,7 @@ import TwitterWish from "../components/twitter/TwitterWish";
 import MyWish from "../components/wish/MyWish";
 import GameWish from "../components/game/GameWish";
 import Image from "next/image";
-import { kanit_latin_300, kanit_latin_400 } from "../types/fontsTypes";
+import { kanit_latin_300 } from "../types/fontsTypes";
 
 const MyWishPage = () => {
   return (

@@ -4,7 +4,7 @@ import "firebase/firestore";
 import Link from "next/link";
 import { kanit_latin_400 } from "./types/fontsTypes";
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className={kanit_latin_400.className}>
       <div className="overflow-hidden ">
